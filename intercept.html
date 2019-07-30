@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+  </head>
+
+  <body>
+    <div class="pages">
+        <a href="./register.html"> Register(200)</a>
+        </br>
+        <a href="./intercept.html"> intercept(200)</a>
+        </br>
+        <a href="./not-found.html">Not Found(404)</a>
+        </br>
+        <a href="./offline.html"> offline(500)</a>
+        </br>
+    </div>
+    <div>
+      <p>
+        A fetch event fires every time any resource controlled by a service worker is fetched, which includes the documents inside the specified scope, and any resources referenced in those documents
+        (for example if index.html makes a cross origin request to embed an image, that still goes through its service worker.)
+      </p>
+      <p>You can attach a fetch event listener to the service worker then call the respondWith() method on the event to hijack our HTTP responses and update them with your own magic.</p>
+    </div>
+    
+  </body>
+  
+</html>
