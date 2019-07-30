@@ -1,4 +1,4 @@
-var cacheName = "v2";
+var cacheName = "v1";
 self.addEventListener("install", event => {
   console.log("install event");
 
@@ -9,13 +9,12 @@ self.addEventListener("install", event => {
   );
 });
 
-self.addEventListener("active", event => {
+self.addEventListener("activate", event => {
   console.log("active event");
 });
 
 self.addEventListener("fetch", event => {
   console.log("fetch url", event.request.url);
-
   event.respondWith(
     caches.match(event.request).then(resp => {
       return (
