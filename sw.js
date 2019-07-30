@@ -1,4 +1,4 @@
-var cacheName = "v1";
+var cacheName = "v2";
 self.addEventListener("install", event => {
   console.log("install event");
 
